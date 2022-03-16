@@ -1,3 +1,4 @@
+/*settaggio dimensioni*/
 *{box-sizing: border-box;}
 .gallery1{
         content: "";
@@ -11,12 +12,14 @@
     margin-right: 8px;
     margin-bottom: 10px;
     position: relative;
+ /*tentativo reattività sito*/
       }
  @media screen and (max-width: 500px) {
         .column {
           width: 100%;
         }
       }
+/*blocco verde*/
 .sconto-30{
     width: 38px ;
     height: 20px;
@@ -30,6 +33,7 @@
     top:0;
     right: 0;
 }
+/*blocco rosso*/
 .sconto-5{
     width: 38px ;
     height: 20px;
@@ -42,4 +46,30 @@
     position: absolute;
     top:0;
     right: 0;
+}
+/*cuore*/
+.cuore{
+    position: absolute;
+    left: 150px;
+    bottom: 0px;
+}
+}
+.linea1 { 
+    position: relative; 
+    overflow: hidden; 
+} 
+ 
+.linea1 .cuore { 
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    color: red; 
+    display: none; 
+    width: 100%; 
+    padding: 10px; 
+    text-align: center;
+} 
+ 
+.linea1:hover .cuore { 
+        display: block;
 }
